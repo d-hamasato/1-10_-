@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  background-color: #FF9A4B;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+}
+
+.container-main-content {
+  width: 300px;
+  background-color: #EEEEEE;
+  padding: 10px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.container-main-content:last-of-type {
+  margin-right: 0;
+}
+
+.tag-step {
+  color: white;
+  background-color: #FF9A4B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px;
+}
+
+.image-box1 {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.image-box2 {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.image-box3 {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.contents-header {
+  padding: 5px 0;
+  margin-top: 10px;
+}
+
+footer {
+  height: 50px;
+  background-color: #AAAAAA;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .container-main-content {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .container-main-content:last-of-type {
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+}
+
+/* width 768~960pxの際 mainが画面内に収まるように追記 */
+@media screen and (max-width: 960px) {
+  main {
+    width: 100%;
+  }
+}
